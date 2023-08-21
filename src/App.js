@@ -44,35 +44,35 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/eyemax-store",
       element: <Layout />,
       children: [
         {
-          path: "/",
+          path: "/eyemax-store",
           element: <Home />,
         },
         {
-          path: "/gioi-thieu",
+          path: "/eyemax-store/gioi-thieu",
           element: <About />,
         },
         {
-          path: "/san-phams",
+          path: "/eyemax-store/san-phams",
           element: <Products />,
         },
         {
-          path: "/lien-he",
+          path: "/eyemax-store/lien-he",
           element: <Contact />,
         },
         {
-          path: "/san-pham/:id",
+          path: "/eyemax-store/san-pham/:id",
           element: <Product />,
         },
         {
-          path: "/gio-hang",
+          path: "/eyemax-store/gio-hang",
           element: <Cart />,
         },
         {
-          path: "/thanh-toan",
+          path: "/eyemax-store/thanh-toan",
           element: (
             <ProtectedRoute>
               <CheckOut />
@@ -80,16 +80,16 @@ function App() {
           ),
         },
         {
-          path: "/dang-nhap",
+          path: "/eyemax-store/dang-nhap",
           element: <Login />,
         },
         {
-          path: "/dang-ky",
+          path: "/eyemax-store/dang-ky",
           element: <Register />,
         },
 
         {
-          path: "/thong-tin-ca-nhan",
+          path: "/eyemax-store/thong-tin-ca-nhan",
           element: (
             <ProtectedRoute>
               <InfoPersonal />
@@ -97,7 +97,7 @@ function App() {
           ),
         },
         {
-          path: "/chi-tiet-don-hang/:id",
+          path: "/eyemax-store/chi-tiet-don-hang/:id",
           element: (
             <ProtectedRoute>
               <OrderDetails />
