@@ -1,0 +1,141 @@
+.cart-item {
+  display: flex;
+  background-color: #fff;
+  border-style: solid;
+  border-color: #eee;
+  border-width: 0px 0px 1px 0px;
+
+  & .cart-image {
+    width: 114px;
+    height: 114px;
+
+    & img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & .cart-details {
+    display: flex;
+    width: 100%;
+  }
+
+  & .cart-name {
+    padding: 0px 20px 10px;
+    position: relative;
+    width: 500px;
+
+    & h3 {
+      color: #292929;
+      width: 100%;
+      height: auto;
+      text-align: left;
+      text-transform: uppercase;
+      left: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      padding: 0px 10px 0px 0px;
+      line-height: 27px;
+      font-size: 15px;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+
+  & .cart-unit-price,
+  & .cart-quantity,
+  & .cart-price {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+
+    & p {
+      height: auto;
+      width: 100%;
+      color: #474747;
+      font-size: 14px;
+      top: 0;
+      left: 0;
+      padding: 0px 0px 10px;
+      margin: 0;
+      font-weight: 600;
+      display: block;
+      position: relative;
+    }
+  }
+
+  & .cart-price span {
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  & .cart-delete {
+    width: 44px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &-small {
+    padding: 15px 0px;
+
+    & .cart-image {
+      width: 100px;
+      height: 100px;
+      display: block;
+      padding: 5px;
+      background-color: #fff;
+      border: 2px;
+      border-style: solid;
+      border-color: #eee;
+
+      & img {
+        width: 90px;
+        height: 90px;
+      }
+
+      &:hover {
+        border-color: #abd373;
+      }
+    }
+
+    & .cart-details {
+      flex-direction: column;
+      height: 100%;
+    }
+
+    & .cart-name {
+      padding: 0px 0px 0px 10px;
+      position: relative;
+      width: 220px;
+
+      & h3 {
+        font-weight: 600;
+        margin: 0px 0px 5px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-transform: inherit;
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+
+    & .cart-unit-price {
+      display: none;
+    }
+
+    & .cart-quantity,
+    & .cart-price {
+      display: flex;
+      width: 220px;
+      justify-content: space-between;
+      padding: 0px 0px 0px 10px;
+    }
+  }
+}

@@ -1,0 +1,399 @@
+@import "../../responsive.scss";
+.navbar {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: #fff;
+
+  @include xl {
+    padding: 0 !important;
+    height: 80px;
+  }
+
+  @include lg {
+    padding: 0 !important;
+    height: 60px;
+  }
+
+  @include sm {
+    padding: 0 !important;
+    height: 60px;
+  }
+
+  &-wrapper {
+    height: 100px;
+    width: 100%;
+    padding: 17px 160px !important;
+    display: flex;
+    background-color: var(--white) !important;
+
+    @include xl {
+      padding: 10px 100px !important;
+      height: 80px;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+    }
+
+    @include lg {
+      padding: 10px 50px !important;
+      height: 60px;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+    }
+
+    @include sm {
+      padding: 0 !important;
+      height: 60px;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+    }
+  }
+
+  &-left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @include xl {
+      position: relative;
+      padding: 0;
+      height: 80px;
+      justify-content: space-between;
+    }
+
+    @include lg {
+      position: relative;
+      padding: 0;
+      height: 60px;
+      justify-content: space-between;
+    }
+
+    @include sm {
+      position: relative;
+      padding: 10px;
+      height: 60px;
+      justify-content: space-between;
+    }
+  }
+
+  &-logo {
+    margin-right: 90px;
+    height: 60px;
+
+    @include lg {
+      height: 40px;
+    }
+
+    @include sm {
+      height: 40px;
+    }
+  }
+
+  &-button {
+    display: none;
+    background-color: #af7f66 !important;
+    border: none !important;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    @include xl {
+      display: flex;
+    }
+
+    @include sm {
+      display: flex;
+    }
+
+    & .bslist {
+      color: #fff;
+    }
+  }
+
+  &-list {
+    @include xl {
+      display: none;
+    }
+
+    @include sm {
+      display: none;
+    }
+
+    &-show {
+      position: absolute;
+      width: 300px;
+      top: 60px;
+      right: 0;
+      padding: 20px;
+      background-color: #fff;
+      z-index: 99;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      @include lg {
+        top: 50px;
+      }
+
+      .navbar-nav {
+        gap: 5px !important;
+      }
+
+      .nav-item {
+        border-style: solid;
+        border-width: 0px 0px 1px;
+        border-color: #ebebeb;
+      }
+    }
+  }
+
+  &-nav {
+    gap: 25px;
+  }
+
+  &-cart-chilren {
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 30px;
+    font-size: 12px;
+    background-color: #af7f66;
+    transform: translateX(-90%) translateY(-20px);
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+  }
+
+  &-account {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 80px;
+    background-color: #fff;
+    z-index: 99;
+    box-shadow: rgb(0 0 0 / 18%) 0px 6px 12px;
+    padding-top: 10px;
+
+    & .links {
+      display: flex;
+      align-items: center;
+      padding: 5px 15px;
+      color: #292929;
+      font-size: 15px;
+      gap: 5px;
+
+      &:hover {
+        color: #af7f66;
+      }
+    }
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
+    @include xl {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      height: 80px;
+      width: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+
+      & .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        & .nav-item {
+          width: 20px;
+        }
+      }
+    }
+
+    @include lg {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      width: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+
+      & .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        & .nav-item {
+          width: 20px;
+        }
+      }
+    }
+
+    @include sm {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      width: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+
+      & .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        & .nav-item {
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  & .collapse {
+    @include xl {
+      top: 62px;
+      right: 0px;
+      position: absolute;
+      width: 255px;
+      z-index: 99;
+      background-color: rgb(255, 255, 255) !important;
+    }
+
+    @include sm {
+      top: 62px;
+      right: 0px;
+      position: absolute;
+      width: 255px;
+      z-index: 99;
+      background-color: rgb(255, 255, 255) !important;
+    }
+  }
+}
+
+.nav {
+  &-item {
+    position: relative;
+
+    @include xl {
+      z-index: 99;
+    }
+
+    @include sm {
+      z-index: 99;
+    }
+
+    &:hover {
+      color: #af7f66;
+
+      & .nav-cart {
+        color: #000;
+      }
+
+      & .navbar-account {
+        display: flex !important;
+      }
+    }
+
+    &-cart {
+      position: relative;
+
+      &:hover .nav-cart {
+        display: block;
+      }
+    }
+  }
+
+  &-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary) !important;
+    }
+  }
+
+  &-icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &-cart {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: -10px;
+    height: auto;
+    width: auto;
+    top: 25px;
+    padding: 0px 20px 20px 20px;
+    max-height: 450px;
+    overflow: auto;
+    background-color: #fff;
+    z-index: 99;
+    box-shadow: rgb(0 0 0 / 18%) 0px 6px 12px;
+    padding-top: 10px;
+
+    &-container {
+      padding: 10px;
+    }
+
+    &-total,
+    &-button {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-total {
+      padding: 10px 0px;
+      border-width: 0px 0px 1px;
+      border-style: solid;
+      border-color: #e5e5e5;
+
+      & p {
+        margin: 0;
+      }
+
+      & span {
+        padding: 0px 15px;
+        color: #af7f66;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+      }
+    }
+
+    &-button {
+      padding-top: 20px;
+      gap: 20px;
+
+      & .cart-more,
+      & .cart-pay {
+        width: 150px !important;
+        height: 40px;
+      }
+    }
+  }
+}
+
+.active {
+  color: var(--primary) !important;
+}

@@ -1,0 +1,129 @@
+@import "../../responsive.scss";
+
+.contact {
+  &-row {
+    padding: 50px 175px;
+    width: 100%;
+
+    @include sm {
+      padding: 10px;
+      margin: 0 !important;
+      gap: 20px;
+    }
+  }
+
+  &-title {
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 35px;
+    padding: 0px 0px 5px;
+    border-style: dotted;
+    border-color: #ebebeb;
+    border-width: 0px 0px 1px;
+    margin: 0px 0px 15px;
+
+    @include sm {
+      font-size: 18px;
+    }
+  }
+
+  &-form {
+    position: relative;
+
+    &:after {
+      content: "*";
+      color: red;
+      position: absolute;
+      font-weight: 700;
+      font-size: 18px;
+      left: 15px;
+      top: 20px;
+      transform: translate(0, calc(-50% + 4px));
+    }
+
+    &:nth-last-of-type(3):after {
+      content: "";
+    }
+
+    &:focus {
+      box-shadow: none !important;
+      border-color: #dee2e6 !important;
+    }
+  }
+
+  .form {
+    &-control {
+      padding: 10px 0px 10px 20px !important;
+      margin: 0px 5px 10px 0px;
+
+      &:focus {
+        box-shadow: none !important;
+        border-color: #dee2e6 !important;
+      }
+    }
+  }
+
+  &-btn {
+    width: 120px;
+    height: 42px;
+    background-color: #af7f66 !important;
+    color: #fff !important;
+    text-align: center !important;
+    transition: all 300ms ease !important;
+    font-size: 15px !important;
+    text-transform: uppercase !important;
+    border-radius: 0 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    &:hover {
+      background-color: var(--black) !important;
+    }
+  }
+
+  &-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & li {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      margin: 0px 0px 10px;
+      gap: 5px;
+
+      span {
+        gap: 5px;
+        display: flex;
+        align-items: center;
+      }
+
+      @include sm {
+        span {
+          gap: 5px;
+          display: flex;
+          align-items: center;
+          width: auto;
+
+          &:last-child {
+            width: 150px;
+          }
+        }
+      }
+
+      & p {
+        margin: 0;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-maps {
+    width: 100%;
+  }
+}

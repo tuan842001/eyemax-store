@@ -1,0 +1,120 @@
+@import "../../responsive.scss";
+
+.featured-products {
+  padding: 50px 175px;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: stretch;
+  flex-wrap: wrap;
+  display: flex;
+
+  @include sm {
+    padding: 10px !important;
+  }
+
+  &:nth-child(even) .featured-products-images {
+    left: 50%;
+
+    @include sm {
+      left: 0;
+      margin-bottom: 25px;
+    }
+  }
+
+  &:nth-child(even) .featured-products-list {
+    right: 50%;
+    padding: 0px 30px 0px 0px !important;
+
+    @include sm {
+      right: 0;
+      padding: 0 !important;
+    }
+  }
+
+  &-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 20px;
+  }
+
+  &-title {
+    width: 100%;
+    color: #292929;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px 0px 5px;
+    line-height: 45px;
+    padding: 0px 15px;
+    font-weight: 600;
+    display: block;
+    @include sm {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  &-desc {
+    height: auto;
+    width: 50%;
+    text-align: center;
+    color: #292929;
+    font-weight: 500;
+
+    @include sm {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+
+  &-row {
+    position: relative;
+
+    @include sm {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-images {
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 2px;
+    padding: 5px !important;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      width: 574px;
+      height: 600px;
+      border-radius: 5px;
+      object-fit: cover;
+
+      @include sm {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px 0px 0px 30px !important;
+
+    @include sm {
+      padding: 10px !important;
+    }
+  }
+}

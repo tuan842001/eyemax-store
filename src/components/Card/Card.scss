@@ -1,0 +1,232 @@
+@import "../../responsive.scss";
+
+.card {
+  width: 280px;
+  height: 410px !important;
+  background-color: #fff !important;
+  border-style: solid !important;
+  border-color: #ebebeb !important;
+  border-width: 1px !important;
+  border-radius: 5px !important;
+  overflow: hidden;
+  position: relative;
+
+  @include sm {
+    width: 177px;
+    height: 295px !important;
+  }
+
+  &:hover {
+    border-color: var(--primary) !important;
+
+    & .card {
+      &-title h3 {
+        color: var(--primary);
+      }
+
+      &-images {
+        // & img {
+        //   transform: scale(1.1);
+        //   transition: all 500ms ease;
+        // }
+
+        & .main-img {
+          opacity: 0;
+          transform: translate(calc(-100% - 5px));
+          -ms-transform: translate(calc(-100% - 5px));
+          -webkit-transform: translate(calc(-100% - 5px));
+        }
+
+        & .second-img {
+          opacity: 1;
+          transform: translate(-100%);
+          -ms-transform: translate(-100%);
+          -webkit-transform: translate(-100%);
+        }
+      }
+
+      &-widget {
+        transition: all 300ms ease;
+        opacity: 1;
+      }
+    }
+  }
+
+  &-title {
+    width: 280px;
+    padding: 20px 0px 0px 0px;
+    margin: 0 !important;
+
+    @include sm {
+      width: 177px;
+      padding: 10px 0 0 0;
+    }
+
+    & h3 {
+      color: #292929;
+      width: auto;
+      height: 60px;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 16px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      font-weight: 600;
+      line-height: 24px;
+      transition: all 300ms ease;
+      margin: 0px 15px 0px 15px;
+      border-style: solid;
+      border-color: #ebebeb;
+      border-width: 0px 0px 1px;
+      padding: 0px 0px 10px;
+
+      @include sm {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-images {
+    width: 280px;
+    height: 280px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @include sm {
+      width: 175px;
+      height: 175px;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      transition: all 800ms ease;
+      // position: absolute;
+    }
+    // .main-img {
+    //   z-index: 1;
+    // }
+
+    & .second-img {
+      opacity: 0;
+    }
+  }
+
+  &-widget {
+    width: 100%;
+    height: auto;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-90%);
+    transition: all 300ms ease;
+    opacity: 0;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+
+    &-button {
+      width: 35px;
+      height: 35px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      box-shadow: rgb(0 0 0 / 15%) 0px 2px 12px;
+
+      &:hover {
+        color: var(--c-1666772810865, #fff);
+        background-color: var(--c-1677218836023, #af7f66);
+        transition: all 300ms ease;
+      }
+    }
+
+    @include sm {
+      top: 85%;
+    }
+  }
+
+  &-button {
+    color: #292929;
+    font-size: 15px;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    padding: 10px;
+    transition: all 300ms ease;
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &-price {
+    height: auto;
+    width: 100%;
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px 20px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 12px;
+  }
+
+  &-small {
+    width: 277px;
+    height: 295px !important;
+
+    @include sm {
+      width: 177px;
+      height: 265px !important;
+    }
+
+    & .card {
+      &-title {
+        width: 277px;
+        padding: 10px 0px 0px 0px;
+
+        @include sm {
+          width: 177px;
+          padding: 10px 0 0 0;
+        }
+
+        & h3 {
+          height: 30px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          overflow: hidden;
+        }
+      }
+
+      &-images {
+        width: 515px;
+        height: 206px;
+        padding: 20px;
+
+        @include sm {
+          width: 175px;
+          height: 175px;
+          padding: 10px;
+        }
+      }
+
+      &-widget {
+        top: 80%;
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.products {
+  display: flex;
+  padding: 50px 169px;
+
+  &-right {
+    padding-left: 30px;
+  }
+
+  &-sort {
+    padding: 0px 0px 25px;
+
+    & label {
+      margin: 0 7px 0 0;
+    }
+
+    & select {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 5px;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  &-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &-pagging {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0px 20px;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 1px;
+    outline: none;
+  }
+
+  &-filter {
+    margin: 0px 0px 20px 0px;
+  }
+
+  &-filter h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 0px 15px 0px;
+    margin: 0px;
+  }
+
+  &-input {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 5px 0px;
+    cursor: pointer;
+
+    & label {
+      cursor: pointer;
+    }
+
+    & input {
+      width: 20px;
+      height: 20px;
+      margin: 0px 15px 0px 0px;
+      accent-color: var(--primary);
+      cursor: pointer;
+    }
+    &-price {
+      width: 200px !important;
+    }
+  }
+
+  & .pagination {
+    gap: 10px;
+  }
+
+  & .page {
+    &-item,
+    &-link {
+      background-color: #ececec !important;
+      color: #292929 !important;
+      border-radius: 50px !important;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      font-size: 15px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "./responsive.scss";
+
+:root {
+  --primary: #af7f66;
+  --white: #fff;
+  --black: #000;
+  --gray: #ebebeb;
+}
+
+* {
+  font-family: "Lora", serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fafcff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.links {
+  color: inherit;
+  text-decoration: none;
+}
+
+.form {
+  &-control {
+    padding: 10px 0px 10px 20px !important;
+    margin: 0px 5px 10px 0px;
+
+    &:focus {
+      box-shadow: none !important;
+      border-color: #dee2e6 !important;
+    }
+  }
+}

@@ -1,0 +1,234 @@
+.product {
+  padding: 50px 175px;
+
+  &-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    width: 360px;
+    height: 360px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & .select-img {
+    margin-top: 10px;
+    height: auto;
+    display: flex;
+
+    &-chilren {
+      width: 64px;
+      height: 64px;
+      margin-right: 10px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ccc;
+      cursor: pointer;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-active {
+      border-color: #af7f66;
+      border-width: 2px;
+    }
+  }
+
+  &-title {
+    color: #292929;
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0px 0px 10px;
+    border-style: dotted;
+    border-color: #ebebeb;
+    border-width: 0px 0px 1px;
+    padding: 0px 0px 5px;
+  }
+
+  &-price {
+    font-size: 22px;
+    line-height: 30px;
+    color: #af7f66;
+    font-weight: 500;
+    margin: 0px 10px 0px 0px;
+    padding: 0px 20px 0px 0px;
+  }
+
+  &-info {
+    // padding: 20px 0;
+    width: 100%;
+
+    & ul {
+      list-style: none;
+      padding: 0;
+
+      & li {
+        display: flex;
+        padding: 5px 0;
+        gap: 10px;
+      }
+    }
+  }
+
+  &-quantity {
+    display: flex;
+
+    & button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #f0f0f0;
+      background-color: #fff;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+
+    & input {
+      width: 50px;
+      height: 40px;
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #f0f0f0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &-button {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  &-add {
+    &-cart {
+      width: auto;
+      color: #fff;
+      font-size: 15px;
+      text-align: center;
+      padding: 0px 20px;
+      background-color: #af7f66;
+      height: 40px;
+      line-height: 38px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: all 300ms ease;
+      text-transform: uppercase;
+      margin: 0px 10px 0px 0px;
+      display: inline-flex;
+      position: relative;
+      border: none;
+
+      &:hover {
+        background-color: #292929;
+      }
+    }
+
+    &-like {
+      width: 40px;
+      color: #fff;
+      font-size: 15px;
+      text-align: center;
+      background-color: #292929;
+      height: 40px;
+      line-height: 30px;
+      border-radius: 3px;
+      font-weight: 400;
+      transition: all 300ms ease;
+      text-transform: capitalize;
+      margin: 0px 10px 0px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+
+      &:hover {
+        background-color: #af7f66;
+      }
+    }
+  }
+
+  &-text {
+    height: auto;
+    width: 100%;
+    padding: 15px 15px 2px 20px;
+    background-color: rgba(175, 127, 102, 0.31);
+    line-height: 27px;
+    margin: 0px 0px 10px;
+    color: #292929;
+    font-weight: 500;
+    display: block;
+    position: relative;
+  }
+
+  &-center {
+    margin-top: 50px;
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & h2 {
+        color: #af7f66;
+        font-size: 22px;
+        text-transform: capitalize;
+        font-weight: 500;
+        border-style: solid;
+        border-width: 0px 0px 2px;
+        border-color: #af7f66;
+      }
+    }
+  }
+
+  &-desc {
+    padding: 20px 0;
+    width: 100%;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 1px 1px 1px;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    .col {
+      padding: 15px;
+    }
+
+    &-imges {
+      position: relative;
+    }
+
+    &-text {
+      position: absolute;
+      top: 158px;
+      left: 150px;
+      font-weight: 600;
+      color: #001d7c;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import "../../responsive.scss";
+
+.home {
+  &-products {
+    padding: 50px 175px;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: wrap;
+    display: flex;
+    @include sm {
+      padding: 10px !important;
+    }
+
+    &-top {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 0px 20px;
+    }
+
+    &-title {
+      width: 100%;
+      color: #292929;
+      font-size: 32px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0px 0px 5px;
+      line-height: 45px;
+      padding: 0px 15px;
+      font-weight: 600;
+      display: block;
+
+      @include sm {
+        font-size: 22px;
+      }
+    }
+
+    &-desc {
+      height: auto;
+      width: 50%;
+      text-align: center;
+      color: #292929;
+      font-weight: 500;
+
+      @include sm {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+
+    &-list {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 0px !important;
+    }
+  }
+
+  &-banner {
+    & img {
+      width: 100%;
+    }
+
+    @include sm {
+      padding: 20px 0;
+    }
+  }
+
+  &-feedback {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+
+    @include sm {
+      width: 100%;
+    }
+
+    & img {
+      height: 337px;
+
+      @include sm {
+        height: 175px;
+
+        &:nth-last-child(even) {
+          display: none;
+        }
+      }
+    }
+
+    &-right {
+      display: flex;
+    }
+  }
+}
