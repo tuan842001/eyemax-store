@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/eyemax-store/static/css/main.13394816.css",
+    "main.js": "/eyemax-store/static/js/main.a6656703.js",
+    "index.html": "/eyemax-store/index.html",
+    "main.13394816.css.map": "/eyemax-store/static/css/main.13394816.css.map",
+    "main.a6656703.js.map": "/eyemax-store/static/js/main.a6656703.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13394816.css",
+    "static/js/main.a6656703.js"
+  ]
+}
