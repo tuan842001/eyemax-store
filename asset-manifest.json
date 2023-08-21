@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/eyemax-store/static/css/main.13394816.css",
-    "main.js": "/eyemax-store/static/js/main.7b80ecce.js",
+    "main.css": "/eyemax-store/static/css/main.1c353736.css",
+    "main.js": "/eyemax-store/static/js/main.5addd49c.js",
     "index.html": "/eyemax-store/index.html",
-    "main.13394816.css.map": "/eyemax-store/static/css/main.13394816.css.map",
-    "main.7b80ecce.js.map": "/eyemax-store/static/js/main.7b80ecce.js.map"
+    "main.1c353736.css.map": "/eyemax-store/static/css/main.1c353736.css.map",
+    "main.5addd49c.js.map": "/eyemax-store/static/js/main.5addd49c.js.map"
   },
   "entrypoints": [
-    "static/css/main.13394816.css",
-    "static/js/main.7b80ecce.js"
+    "static/css/main.1c353736.css",
+    "static/js/main.5addd49c.js"
   ]
 }
