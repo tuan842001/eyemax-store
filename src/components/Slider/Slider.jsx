@@ -3,7 +3,7 @@ import "./Slider.scss";
 import { Link } from "react-router-dom";
 
 const Slider = () => {
-  const data = ["../../img/slider-1.png", "../../img/slider-2.png"];
+  const data = ["https://firebasestorage.googleapis.com/v0/b/eyemax-store.appspot.com/o/images%2Fslider-1.png?alt=media&token=2b17e4e7-d567-4beb-9774-4a0e40c25ee5", "https://firebasestorage.googleapis.com/v0/b/eyemax-store.appspot.com/o/images%2Fslider-2.png?alt=media&token=1f315239-5aca-46b7-8220-8e0269e24eef"];
 
   return (
     <div
